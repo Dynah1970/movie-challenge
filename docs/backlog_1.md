@@ -71,13 +71,15 @@ críterios compatibles con Themovie Database API V3.
 
 ### Criterios de aceptación
 
+- [El endpoint `/discover/movie`](https://developer.themoviedb.org/reference/discover-movie)
+debe ser utilizado para la lista de peliculas (reemplaza el dataset estatica)
 - Para filtrar, se debe utilizar el endpoint [/discover/movie](https://developer.themoviedb.org/reference/discover-movie),
 y uno o más parámetros, como por ejemeplo with_genres.
 - Para ordenar, debes utilizar el enpoint [/discover/movie](https://developer.themoviedb.org/reference/discover-movie),
 y uno o más parámetros, como por ejemplo sort_by
+- La aplicación debe incluir la paginación para explorar el catálogo por páginas
 - La página debe mantener el filtro y el ordenamiento.
 - Cada película debe mostrar al menos: póster, título original y año de estreno.
-- La página debe tener paginación.
 
 ### Definición de terminado
 
