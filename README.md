@@ -429,7 +429,7 @@ Hablas con un coach si necesitas ayuda en elegir cual camino.
 
 * [Backlog 1](docs/backlog_1.md) - Refuerza objetivos de arreglos, objetos y
     sus metódos antes de aprender HTTP y javascript asíncrona
-* [Backlog 2](docs/backlog_1.md) - Empieza con el uso de un API y objetivos HTTP
+* [Backlog 2](docs/backlog_2.md) - Empieza con el uso de un API y objetivos HTTP
     y javascript asíncrona
 
 ## 7. Deploy
