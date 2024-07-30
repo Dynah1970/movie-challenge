@@ -493,12 +493,14 @@ en Trello o Github Project.
 
 #### Entendiendo los conceptos de SPA (Single Page Aplication) y Router
 
-Antes de comenzar con el código, asegúrate de entender los conceptos de una
-single page aplication(SPA) y enrutado de páginas. Esto te permitirá crear una
-experiencia de usuario fluida y dinámica. Investiga las mejores prácticas y
+Antes de comenzar con el código de Router, asegúrate de
+entender los conceptos de una [single page aplication (SPA)](https://github.com/Laboratoria/curriculum/blob/main/guides/router-spa/README.md#qu%C3%A9-es-un-single-page-application-spa)
+y [enrutado (router) de páginas](https://github.com/Laboratoria/curriculum/blob/main/guides/router-spa/README.md#qu%C3%A9-es-un-router).
+Investiga las mejores prácticas y
 herramientas disponibles para implementar una SPA en tu proyecto.
 
-Recomendamos hacer una SPA más simple usando `hashchange` . Este [video](https://youtu.be/hf8x3A1e57Y)
+Depende en los tiempos de tu proyecto, podemos recomendar hacer una
+SPA más simple usando `hashchange`. Este [video](https://youtu.be/hf8x3A1e57Y)
 puede ayudarte a construir tu SPA en `main.js` de tu proyecto.
 
 Si puedes tomarte el tiempo y quieres profundizar en las rutas y en la
