@@ -11,7 +11,7 @@ momento.
 Yo como ususaria, quiero ver un catálogo de películas en una tabla (líneas y
 columnas).
 
-### Criterios de apectación
+### Criterios de aceptación
 
 - [El endpoint `/discover/movie`](https://developer.themoviedb.org/reference/discover-movie)
 debe ser utilizado.
