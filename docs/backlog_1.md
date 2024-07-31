@@ -39,6 +39,7 @@ Yo, como usuaria, quiere filtrar y ordenar las películas.
 
 - Las funcionalidades de filter y sort deben tener pruebas unitarias
 - Un pull request y code review de una compañera o coach
+- Pasa [los tests de Lighthouse accessibility](https://web.dev/learn/accessibility/test-automated)
 
 ---
 

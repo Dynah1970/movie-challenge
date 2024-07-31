@@ -425,12 +425,12 @@ otro.
 
 Tenemos dos opciones para un _backlog_ de Historias de Usuario.
 Lo que eliges depende en los objetivos de aprendizaje que tienes que reforzar.
-Hablas con un coach si necesitas ayuda en elegir cual camino.
+Habla con un coach si necesitas ayuda en elegir cual camino.
 
 * [Backlog 1](docs/backlog_1.md) - Refuerza objetivos de arreglos, objetos y
-    sus metódos antes de aprender HTTP y javascript asíncrona
+    sus metódos antes de aprender HTTP y javascript asíncrona.
 * [Backlog 2](docs/backlog_2.md) - Empieza con el uso de un API y objetivos HTTP
-    y javascript asíncrona
+    y javascript asíncrona.
 
 ## 7. Deploy
 

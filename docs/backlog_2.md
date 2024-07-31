@@ -59,3 +59,5 @@ y uno o más parámetros, como por ejemplo sort_by
 ### Definición de terminado
 
 - Los componentes desarrollados deben tener pruebas unitarias
+- Un pull request y code review de una compañera o coach
+- Pasa [los tests de Lighthouse accessibility](https://web.dev/learn/accessibility/test-automated)
