@@ -1,7 +1,7 @@
 export default [
     {
         "adult": false,
-        "backdrop_path": "/tncbMvfV0V07UZozXdBEq4Wu9HH.jpg",
+         "backdrop_path":"/tncbMvfV0V07UZozXdBEq4Wu9HH.jpg",
         "genre_ids": [
             28,
             80,

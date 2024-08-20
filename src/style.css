@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Contenedor de lista de películas usando Flexbox */
+#movie-list {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+    gap: 1rem; /* Espacio entre los elementos */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    list-style: none; /* Elimina los puntos de lista */
+}
+
+/* Estilo para cada elemento de película */
+.movie-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5rem;
+    flex: 1 1 calc(25% - 1rem); /* Ajusta el tamaño de cada elemento para ocupar el 25% del ancho del contenedor (menos el espacio) */
+    max-width: calc(25% - 1rem); /* Limita el ancho máximo */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+/* Estilo para la imagen dentro del elemento de película */
+.movie-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo para el título de la película */
+.movie-item h2 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Estilo para la descripción de la película */
+.movie-item p {
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .movie-item h2 {
+        font-size: 1rem;
+    }
+    
+    .movie-item {
+        flex: 1 1 calc(50% - 1rem); /* Ajusta el tamaño de cada elemento para ocupar el 50% del ancho del contenedor en pantallas más pequeñas */
+        max-width: calc(50% - 1rem); /* Limita el ancho máximo */
+    }
+}
+
+@media (max-width: 400px) {
+    .movie-item {
+        flex: 1 1 calc(100% - 1rem); /* Ajusta el tamaño de cada elemento para ocupar el 100% del ancho del contenedor en pantallas aún más pequeñas */
+        max-width: calc(100% - 1rem); /* Limita el ancho máximo */
+    }
+
+    .movie-item h2 {
+        font-size: 0.9rem;
+    }
+
+    .movie-item {
+        padding: 0.25rem;
+    }
+}
