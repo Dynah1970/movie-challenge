@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,30 @@
         <h1>Lista de Películas</h1>
     </header>
     <main>
-        <ul id="movie-list"> </ul>
-      </main>
-<footer>
-    <p>&copy; 2024 Movie Showcase. Todos los derechos reservados.</p>
-      <p>Creado por Dynah Gomez</p>
-     </footer>
+        <div id="controls">
+            <label for="filter-year">filtrar por año</label>
+            <select id="filter-year">
+                <option value="all">Todos los Años</option>
+                <option value="2016">2016</option>
+                <option value="2018">2018</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+            <label for="sort-order">filtrar por orden</label>
+            <select id="sort-order">
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+            <button id="clear-filters">Limpiar Filtros</button>
+        </div>
+               
+        <ul id="movie-list"></ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Showcase. Todos los derechos reservados.</p>
+        <p>Creado por Dynah Gomez</p>
+    </footer>
+    <script type="module" src="main.js"></script>
     
- </body>
-<script type="module" src="main.js"></script>
- 
+</body>
 </html>
-
-
