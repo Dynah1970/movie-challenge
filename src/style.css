@@ -1,0 +1,179 @@
+/* Estilos del Modal */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 90%;
+    max-height: 80%;
+    margin: 2rem auto;
+    overflow: auto;
+    position: relative; /* Necesario para el posicionamiento del botón de cierre */
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.modal-content h2,
+.modal-content p {
+    margin: 0.5rem 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #121111; /* negro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos para el título principal */
+header h1 {
+    font-family: 'Roboto Slab', serif; /* Aplica la fuente de estilo de cartelera */
+    font-size: 2.5rem; /* Ajusta el tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega una sombra al texto para darle más impacto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin: 0;
+    border: 3px solid #141313; /* Borde negro fuerte para resaltar el título */
+    padding: 0.5rem;
+    background: #302f31; /* Fondo gris suave detrás del texto */
+    color: #fff; /* Color del texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    animation: flicker 1.5s infinite; /* Efecto de parpadeo */
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Contenedor de lista de películas usando Flexbox */
+#movie-list {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+    gap: 1rem; /* Espacio entre los elementos */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    list-style: none; /* Elimina los puntos de lista */
+}
+
+/* Estilo para cada elemento de película */
+.movie-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5rem;
+    flex: 1 1 calc(25% - 1rem); /* Ajusta el tamaño de cada elemento para ocupar el 25% del ancho del contenedor (menos el espacio) */
+    max-width: calc(25% - 1rem); /* Limita el ancho máximo */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-item h2 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.movie-item p {
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem; /* Ajusta el padding para un espacio más adecuado */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Asegurarse de que el padding se incluya en el ancho total */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.75rem; /* Reducir el tamaño del texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .movie-item {
+        flex: 1 1 calc(50% - 1rem); /* Ajusta el tamaño de cada elemento para ocupar el 50% del ancho del contenedor en pantallas más pequeñas */
+        max-width: calc(50% - 1rem); /* Limita el ancho máximo */
+    }
+
+    #controls select,
+    #controls button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .movie-item {
+        flex: 1 1 calc(100% - 1rem); /* Ajusta el tamaño de cada elemento para ocupar el 100% del ancho del contenedor en pantallas aún más pequeñas */
+        max-width: calc(100% - 1rem); /* Limita el ancho máximo */
+        padding: 0.25rem;
+    }
+
+    .movie-item h2 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos de los controles de selección */
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#controls select,
+#controls button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
