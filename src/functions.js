@@ -11,7 +11,7 @@ export function sortMovies(movies, order) {
 
 
 // Función para filtrar películas por año
- export function filterMoviesByYear(movies, year) {
+export function filterMoviesByYear(movies, year) {
   if (year === "all") {
     return movies;
   }
