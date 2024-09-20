@@ -66,13 +66,13 @@ movieList.addEventListener("click", (event) => {
   if (movieItem) {
     const movieId = movieItem.dataset.movieId;
     navigateToMovieDetail(movieId);
-    fetchMovieDetails(movieId); // Verifica si la función fetchMovieDetails está bien implementada
+    fetchMovieDetails(movieId);
   }
 });
 
 // Función para obtener los detalles de la película desde la API
 function fetchMovieDetails(movieId) {
-  const apiKey = "ac50c776c864e174cd255694891496d8"; // Tu API Key de The Movie DB
+  const apiKey = "a0254171b59b8be987265d32f3ffa3b8"; // Tu API Key de The Movie DB
   const apiUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`;
 
   fetch(apiUrl)

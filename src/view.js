@@ -10,10 +10,7 @@ export function createMovieItem(movie) {
     <p>${new Date(movie.release_date).getFullYear()}</p>
   `;
 
-  // Agregar evento para mostrar detalles al hacer clic en el elemento
-  listItem.addEventListener('click', () => {
-    renderMovieDetail(movie);
-  });
+
 
   return listItem;
 }
@@ -26,6 +23,12 @@ export function renderMovieList(movies, container) {
     const movieItem = createMovieItem(movie);
     container.appendChild(movieItem);
   });
+
+  // Asegúra que los controles sean visibles
+  const controls = document.getElementById("controls");
+  if (controls) {
+    controls.style.display = 'block';
+  }
 }
 
 // Función para renderizar el detalle de la película en un modal
@@ -44,7 +47,7 @@ export function renderMovieDetail(movie) {
       <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
       <h2>${movie.title}</h2>
       <p>Año: ${new Date(movie.release_date).getFullYear()}</p>
-      <p>Género(s): ${movie.genres.join(', ')}</p>
+      <p>Género(s): ${movie.genres.map(genre => genre.name).join(', ')}</p>
       <p>Votación Media: ${movie.vote_average}</p>
       <p>Votos Totales: ${movie.vote_count}</p>
     </div>
@@ -54,7 +57,18 @@ export function renderMovieDetail(movie) {
   // Agregar evento para cerrar el modal al hacer clic en el botón de cierre
   document.querySelector('.close-button').addEventListener('click', () => {
     document.body.removeChild(modal);
+    // Restaurar la visibilidad de los controles después de cerrar el modal
+    const controls = document.getElementById("controls");
+    if (controls) {
+      controls.style.display = 'block';
+    }
   });
 
   modal.style.display = 'block';
+
+  // Ocultar los controles cuando se muestra el detalle de la película
+  const controls = document.getElementById("controls");
+  if (controls) {
+    controls.style.display = 'none';
+  }
 }
